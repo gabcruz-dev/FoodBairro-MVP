@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 4rem;
+  margin: 0px;
+  box-sizing: border-box;
+  --type-first: 'Poppins', georgia;
+  --type-second: Helvetica, Arial, sans-serif;
+  font-family: var(--type-first)
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-first);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 75rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+:root {
+  --purple: #6639DA;
+  --blue: #61BAFC;
+  --orange: #FDA529;
+  --gray: #C2C4D1;
+  --gray-2: #404040;
+  --white: white;
+  --black: black;
+  --orageblack: #462c04;
+}
+
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.t-purple {
+  color: var(--purple);
+}
+
+.t-blue {
+  color: var(--blue);
+}
+
+.t-orange {
+  color: var(--orange);
+}
+
+.t-gray {
+  color: var(--gray);
+}
+
+.t-white {
+  color: var(--white);
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 2px #C2C4D1;
+}
+
+input:hover,
+select:hover {
+  border: solid 2px var(--orange);
+  /* box-shadow: 3px 3px 0px var(--purple); */
+}
+
+
+label {
+  position: relative;
+  display: block;
+}
+
+label input,
+select {
+  width: 100%;
+}
+
+label::after {
+  content: attr(data);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  padding: 0px 5px;
+  color: #00000055;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.capa-filmes {
+  background-color: var(--gray-2);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

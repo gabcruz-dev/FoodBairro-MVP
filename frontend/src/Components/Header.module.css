@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: #dd1818;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.navegator {
+  color: var(--white);
+  font-size: 1.125rem;
+  transition: .3s;
+  text-decoration: none
+}
+
+.navegator:hover {
+  color: var(--red);
+}
+
+.navegator+.navegator {
+  margin-left: 40px;
+}
+
+.logo {
+  padding: .5rem 0;
+  color: var(--white);
+  font-size: 2rem;
+  transition: .3s;
+  text-decoration: none
+}
+
+.logo:hover {
+  color: var(--orange);
+}
